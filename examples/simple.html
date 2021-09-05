@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+<script type="module">
+import { toast } from 'https://taisukef.github.io/bulma-toast/src/index.js';
+
+// https://rfoel.github.io/bulma-toast/
+toast({
+  message: 'toast test!',
+  type: 'is-success',
+  dismissible: true,
+  pauseOnHover: true,
+  duration: 2000,
+  animate: { in: 'fadeIn', out: 'fadeOut' },
+  position: "bottom-right",
+});
+
+onload = () => {
+  btn.onclick = () => {
+    toast({
+      message: "Hi!",
+      duration: 2000,
+    });
+  };
+};
+</script>
+</head>
+<body style="padding: 2em;" class="content">
+<h1>bulma-toast test</h1>
+
+<p><button class="button" id=btn>toast!</button></p>
+
+<div class="box" style="white-space: pre-wrap; word-break: break-all;">
+  &lt;!DOCTYPE html&gt;&lt;html lang="ja"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="viewport" content="width=device-width"&gt;
+  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"&gt;
+  &lt;script type="module"&gt;
+  import { toast } from 'https://taisukef.github.io/bulma-toast/src/index.js';
+  
+  // https://rfoel.github.io/bulma-toast/
+  toast({
+    message: 'toast test!',
+    type: 'is-success',
+    dismissible: true,
+    pauseOnHover: true,
+    duration: 2000,
+    animate: { in: 'fadeIn', out: 'fadeOut' },
+    position: "bottom-right",
+  });
+  &lt;/script&gt;
+  </div>
+</body>
+</html>
